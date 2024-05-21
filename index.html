@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            --primary:red;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #hero{
+            background-image: url(https://user-images.githubusercontent.com/33485020/108069438-5ee79d80-7089-11eb-8264-08fdda7e0d11.jpg);
+            width: 100%;
+            height: 100vh;
+            overflow-y: hidden;
+            overflow-x:hidden;
+        }
+        #nav{
+            display: flex;
+            align-items:center;
+            list-style: none;
+            margin: -15px;
+        }
+        select{
+            margin-right: 25px;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        button{
+            background-color:red;
+            padding: 5px;
+            border-radius: 5px;
+            margin-right: 50px;
+        }
+        #banner-icon{
+            flex-grow: 1;
+            margin-left: 50px;
+        }
+        #cen{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            justify-items: center;
+            margin-top: min(250px,50%);
+            line-gap-override: 2px;
+            color: white;
+        }
+        #ndhero{
+display: flex;
+align-items: center;
+justify-content:space-around;
+height: 90vh;
+width: 100%;
+overflow: hidden;
+        }
+        #image{
+            position: relative;
+        }
+        #vid,#img{
+            position: absolute;
+            top: -300px;
+            left: -500px;
+        }
+        #vid{
+            top: -210px;
+            left: -420px;
+        }
+        #thirdhero{
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: black;
+color: white;
+        }
+        #faq{
+            width: 100%;
+            background-color: black;
+            color:white;
+            height: 90vh;
+        }
+        #faq-h{
+            text-align: center;
+            color: white;
+            margin-bottom: 18px;
+        }
+        .items{
+            margin-left: 150px;
+            display: flex;
+            flex-direction: column;
+            background-color:rgba(201, 201, 201, 0.724);
+            width: 1200px;
+            margin-bottom: 10px;
+            color: white;
+            border-radius: 10px;
+        }
+        .ite{
+            display: flex;
+            width: 1200px;
+            background-color: rgba(63, 63, 63, 0.95);
+            padding: 20px;
+            justify-content: space-between;
+            align-items: center;
+            color: white;  
+        border-radius: 10px;      }
+        .ite img{
+            width: 15px;
+            height: 15px;
+        }
+        .hiddens{
+        display:none;
+        padding: 15px;
+        }
+        #pp a{
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="hero">
+        <div id="nav-bar">
+            <nav>
+                <ul id="nav">
+                <li id="banner-icon"><img src="https://cdn-icons-png.flaticon.com/128/5977/5977590.png" alt="" width="150px"></li>
+                <li class="other">
+                    <select name="" id="">
+                        <option value="english" selected>english</option>
+                        <option value="hindi">hindi</option>
+                    </select>
+                </li>
+                <li class="other"><button>Sign In</button></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="cen">
+            <h1 id="fst">Unlimited movies, TV shows and more</h1>
+            <h3 id="snd">Watch anywhere. Cancel anytime.</h3>
+            <h5 id="trd">Ready to watch? Enter your email or mobile number to create or restart your membership.</h5>
+            <form action="">
+                <input type="text" style="background-color: black; padding: 12px;height: 60px; width: 400px;border-radius: 5px;" placeholder="email or mobile number">
+                <input type="submit" value="Get Started" style="width: 200px; height: 60px;background-color: red;border-radius: 5px;margin-left: 10px;">
+            </form>
+        </div>
+    </div>
+    <div id="ndhero" style="background-color: black;color: white;">
+<div id="words">
+    <h1>Enjoy on your TV</h1>
+    <h3>Watch on smart TVs, PlayStation, Xbox, Chromecast,<br> Apple TV, Blu-ray players and more.</h3>
+</div>
+<div id="image">
+    <video id="vid" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v" autoplay playsinline muted loop></video>
+    <img id="img" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="">
+</div>
+    </div>
+<div id="thirdhero">
+    <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" alt="">
+    <div id="words2">
+        <h1>Download your shows to watch offline</h1>
+        <h3>Save your favourites easily and always have something to watch.</h3>
+    </div>
+</div>
+<div id="ndhero" style="background-color: black;color: white;">
+    <div id="words">
+        <h1>Enjoy on your TV</h1>
+        <h3>Watch on smart TVs, PlayStation, Xbox, Chromecast,<br> Apple TV, Blu-ray players and more.</h3>
+    </div>
+    <div id="image">
+        <video id="vid" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices-in.m4v" autoplay playsinline muted loop width="370px" style="position:absolute;top: -250px;left: -370px;"></video>
+        <img id="img" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile-in.png" alt="">
+    </div>
+        </div>
+        <div id="thirdhero">
+            <img src="https://occ-0-3215-3663.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABVr8nYuAg0xDpXDv0VI9HUoH7r2aGp4TKRCsKNQrMwxzTtr-NlwOHeS8bCI2oeZddmu3nMYr3j9MjYhHyjBASb1FaOGYZNYvPBCL.png?r=54d" alt="">
+            <div id="words2">
+                <h1>Create profiles for kids</h1>
+                <h3>Send children on adventures with their favourite <br>characters in a space made just for them—free <br>with your membership.</h3>
+            </div>
+        </div>
+    <div id="faq">
+        <h1 id="faq-h">Frequently Asked Questions</h1>
+        <div class="items">
+            <div class="ite"  onclick="f('hid1','imgs1')">
+                <h2>what is netflix</h2>
+<img  id="imgs1" src="https://cdn-icons-png.flaticon.com/128/748/748113.png" alt="">
+            </div>
+<p class="hiddens" id="hid1">Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.
+
+    You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!</p>
+</div>
+<div class="items">
+    <div class="ite" onclick="f('hid2','imgs2')">
+    <h2>what is netflix</h2>
+    <img id="imgs2" src="https://cdn-icons-png.flaticon.com/128/748/748113.png" alt="">
+</div>
+    <p class="hiddens" id="hid2">Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.
+    
+        You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!</p>
+    </div>
+    <div class="items">
+        <div class="ite" onclick="f('hid3','imgs3')">
+            <h2>what is netflix</h2>
+            <img id="imgs3" src="https://cdn-icons-png.flaticon.com/128/748/748113.png" alt="">
+        </div>
+        <p class="hiddens" id="hid3">Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.
+        
+            You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!</p>
+        </div>
+    <div class="items">
+        <div class="ite" onclick="f('hid4','imgs4')">
+            <h2>what is netflix</h2>
+            <img id="img4" src="https://cdn-icons-png.flaticon.com/128/748/748113.png" alt="" >
+        </div>
+            <p class="hiddens" id="hid4">Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.
+            
+                You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!</p>
+        </div>
+    <div class="items">
+        <div class="ite" onclick="f('hid5','imgs5')">
+            <h2>what is netflix</h2>
+            <img id="imgs5" src="https://cdn-icons-png.flaticon.com/128/748/748113.png" alt="" >
+        </div>
+                <p class="hiddens" id="hid5">Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.
+                
+                    You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!</p>
+        </div>
+    <div id="cen" style="margin-top: 40px;">
+            <h3 id="trd" style="color: white;">Ready to watch? Enter your email or mobile number to create or restart your membership.</h3>
+        <form id="bottom" action="">
+            <input type="text" style="background-color: black; padding:12px;height:60px; width: 400px;border-radius: 5px;" placeholder="email or mobile number">
+            <input type="submit" value="Get Started" style="width: 200px; height: 60px;background-color: red;border-radius: 5px;margin-left: 10px;">
+        </form>
+    </div>
+    </div>
+    <script>
+        let a=1;
+        function f(v,i){
+            if(a%2!=0)
+            {document.getElementById(v).style.display="flex";
+                document.getElementById(v).style.padding="50px";
+                document.getElementById(i).src="https://cdn-icons-png.flaticon.com/218/456/677455.png";
+            }
+        else
+        {document.getElementById(v).style.display="none";
+            document.getElementById(i).src="https://cdn-icons-png.flaticon.com/128/748/748113.png";
+        }
+            a++;
+            }
+    </script>
+    <div id="footer" style="background-color: black;color: white; width: 100%;height: 60vh;">
+<p>Questions?Call <a href="tel:+000-800-919-1694">000-800-919-1694</a></p>
+<div id="pp" style="display: grid;row-gap: 25px;column-gap: 15px;grid-template-columns: auto auto auto;margin-left: 150px;margin-top: 30px; grid-column-end: 3;">
+    <a href="#">faq</a>
+    <a href="#">help centre</a>
+    <a href="#">account</a>
+    <a href="#">investor relations</a>
+    <a href="#">jobs</a>
+    <a href="#">ways to watch</a>
+    <a href="##">terms of use</a>
+    <a href="#">privacy</a>
+    <a href="#">cookie preferences</a>
+    <a href="#">corporate information</a>
+    <a href="#">speed test</a>
+    <a href="#">legal notices</a>
+    <a href="#">only on netflix</a>
+</div>
+<li class="other" style="list-style: none;margin: 50px;">
+    <select name="" id="" style="background-color: black; color: white;">
+        <option value="english" selected style="color: white;">english</option>
+        <option value="hindi" style="color: white;">hindi</option>
+    </select>
+</li>
+<p style="margin-left: 50px;">created by sai kiran&copy</p>
+    </div>
+</body>
+</html>
